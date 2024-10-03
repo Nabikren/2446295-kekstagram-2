@@ -1,5 +1,5 @@
-import { getRandomNumber, getRandomArrayElement, generateUniqueId } from './util.js';
-import { NAMES, MESSAGES } from './data.js';
+import { getRandomNumber, getRandomArrayElement, generateUniqueId } from '../util.js';
+import { NAMES, MESSAGES } from '../const.js';
 
 // Генерация случайного комментария
 function generateComment() {

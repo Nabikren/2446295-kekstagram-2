@@ -1,7 +1,5 @@
+import { generatePhotosData } from './data/index.js';
+import { PHOTO_COUNT } from './const.js';
 
-import { generatePhotosData } from './photosRender.js';
+const photosData = generatePhotosData(PHOTO_COUNT);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const photosData = generatePhotosData(25);
-  console.log(photosData);
-})

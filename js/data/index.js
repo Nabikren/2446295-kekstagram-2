@@ -1,9 +1,9 @@
-import { getRandomNumber, getRandomArrayElement } from './util.js';
-import { DESCRIPTIONS } from './data.js';
+import { getRandomNumber, getRandomArrayElement } from '../util.js';
+import { DESCRIPTIONS } from '../const.js';
 import { generateComments } from './comments.js';
 
 // Генерация данных для одной фотографии
-function generatePhotoData(id) {
+const generatePhotoData = (id) => {
   return {
     id: id,
     url: `photos/${id}.jpg`,
@@ -14,7 +14,7 @@ function generatePhotoData(id) {
 }
 
 // Генерация массива данных для фотографий
-function generatePhotosData(count) {
+const generatePhotosData = (count) => {
   const photos = [];
   for (let i = 1; i <= count; i++) {
     photos.push(generatePhotoData(i));
